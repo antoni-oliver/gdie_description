@@ -1,7 +1,7 @@
 import {HfInference} from "@huggingface/inference";
 import fs from 'fs';
 const HF_TOKEN = 'xxxx';
-const inference = new HfInference(HF_TOKEN, { apiKey: HF_TOKEN });
+const inference = new HfInference(HF_TOKEN);
 
 for (let i = 0; i < 63; i++) {
     let image = `thumb_${i+1}.jpg`;
